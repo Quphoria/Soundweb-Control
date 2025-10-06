@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="theme-color" content="black" />
         <link rel="icon" href={favicon_url} />
       </Head>
       <Global
