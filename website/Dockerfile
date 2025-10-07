@@ -25,7 +25,7 @@ RUN if [[ $TARGETPLATFORM == linux/arm* && $TARGETPLATFORM != linux/arm64* ]]; t
 # RUN npm install --force
 # WORKDIR /app
 
-RUN dos2unix docker-entrypoint.sh
+RUN dos2unix docker-entrypoint.sh && chmod +x docker-entrypoint.sh
 RUN mkdir /data
 
 ARG VERSION
