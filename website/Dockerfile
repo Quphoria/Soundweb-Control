@@ -12,14 +12,6 @@ WORKDIR /app
 
 COPY ./ .
 
-# fix issue loading nextjs swc on arm
-# https://github.com/vercel/next.js/discussions/30468
-# disable swc on arm (32-bit)
-RUN if [[ $TARGETPLATFORM == linux/arm* && $TARGETPLATFORM != linux/arm64* ]]; then \
-    printf '{\n  "presets": ["next/babel"]\n}' > /app/soundweb-control/.babelrc; \
-    sed -i 's/swcMinify: true/swcMinify: false/g' /app/soundweb-control/next.config.js; \
-  fi
-
 # this gets run in the entrypoint script to reduce image size
 # WORKDIR /app/soundweb-control
 # RUN npm install --force
