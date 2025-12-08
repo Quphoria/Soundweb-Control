@@ -15,10 +15,10 @@ output_dir = "output"
 
 def parse_images(ImageLibrarian):
     global images
-    if not ImageLibrarian:
+    if ImageLibrarian is None:
         return
     items = ImageLibrarian.find("Items")
-    if not items:
+    if items is None:
         return
     entries = items.findall("ItemEntry")
     for entry in entries:
@@ -34,7 +34,7 @@ def parse_images(ImageLibrarian):
         elif ResType == "FILE":
             image_name = ntpath.basename(ResourceName)
             Image = entry.find("Image", None)
-            if Image == None:
+            if Image is None:
                 continue
             if not Image.text:
                 continue
@@ -49,7 +49,7 @@ def parse_panel(filename: str, show_broken_controls=False):
     Panels = tree.getroot()
     assert Panels.attrib.get("Version", None) == "Audio Architect", "File is not an Audio Architect panel"
     Panel = Panels.find("Panel")
-    assert Panel != None, "Panel not found"
+    assert Panel is not None, "Panel not found"
     title = Panel.attrib.get("Text", "Panel")
     # parse images
     os.makedirs(output_dir + "/images", exist_ok=True)
