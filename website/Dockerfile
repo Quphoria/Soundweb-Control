@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:latest
 ARG TARGETPLATFORM
 
 RUN apk add --no-cache dos2unix python3 py3-pip nodejs npm curl
