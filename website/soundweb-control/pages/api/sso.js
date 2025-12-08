@@ -3,7 +3,7 @@ import createSSOToken from "../../config/ssoToken";
 import validSession from "../../lib/validSession";
 import { ssoAppDatabase } from "../../lib/ssoAppDatabase";
 import urlBuilder from "../../lib/urlBuilder";
-import { config } from "../../config/config";
+import config from "../../config/config";
 
 import { sso_login_url, sso_logout_url, sso_access_denied_url } from "../../lib/siteUrls";
 

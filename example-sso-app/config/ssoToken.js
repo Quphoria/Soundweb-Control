@@ -1,7 +1,7 @@
 const crypto    = require('crypto');
 const fs = require('fs');
 
-import { config } from './config';
+import config from './config';
 
 const public_filename = ( process.env.DATA_DIR || "" ) + config.ssoPubKeyFile;
 var SSOPublicKey = undefined;

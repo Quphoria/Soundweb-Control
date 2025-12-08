@@ -1,7 +1,7 @@
 import { withSessionRoute } from "../../lib/withSession";
 import validSession from "../../lib/validSession";
 import crypto from "crypto";
-import { config } from "../../config/config";
+import config from "../../config/config";
 import validateToken from "../../config/ssoToken";
 
 function sanitised(user) {
