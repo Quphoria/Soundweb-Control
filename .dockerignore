@@ -1,0 +1,15 @@
+# directories
+__pycache__
+env
+.VSCodeCounter
+
+# files
+*.panel
+*.panel.backup
+users.json
+PanelContents.js
+config.jsonc
+/data/backend/config.json
+sso_apps.json
+*.priv
+*.pub
