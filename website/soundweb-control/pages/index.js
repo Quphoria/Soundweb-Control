@@ -26,10 +26,10 @@ export default function Home() {
         </p> */}
 
         <Link href={user?.isLoggedIn ? panel_url : login_url}> 
-          <a
+          <span
             className="btn btn-outline-light btn-lg"
             role="button"
-          >Go To {user?.isLoggedIn ? "Panel" : "Login"}</a>
+          >Go To {user?.isLoggedIn ? "Panel" : "Login"}</span>
         </Link>
 
         <Spacer />

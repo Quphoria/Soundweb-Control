@@ -43,7 +43,7 @@ function PanelContents(props) {
         }}>
           Redirecting to&nbsp;
           <Link href={{ pathname: pathname }}>
-            <a>Home Tab</a>
+            Home Tab
           </Link>...
         </div>
       </Redirect>

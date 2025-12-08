@@ -120,13 +120,13 @@ const Layout = ({ children }) => {
       />
       <Nav>
         <Link href={home_url}>
-          <a>Home</a>
+          Home
         </Link>
         {
           user?.isLoggedIn &&
           (
             <Link href={panel_url}>
-              <a>Panel</a>
+              Panel
             </Link>
           )
         }
@@ -134,7 +134,7 @@ const Layout = ({ children }) => {
           has_apps &&
           (
             <Link href={apps_url}>
-              <a>Apps</a>
+              Apps
             </Link>
           )
         }
@@ -142,14 +142,14 @@ const Layout = ({ children }) => {
           user?.isLoggedIn && user.admin &&
           (
             <Link href={admin_url}>
-              <a>Admin</a>
+              Admin
             </Link>
           )
         }
         {
           !user?.isLoggedIn ?
           (<Link href={login_url}>
-            <a>Login</a>
+            Login
           </Link>) :
           (<a href={api_logout_url} onClick={async (e) => {
             e.preventDefault();

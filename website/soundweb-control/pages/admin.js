@@ -53,7 +53,7 @@ const Admin = props => {
         }}>
           Redirecting to&nbsp;
           <Link href={{ pathname: home_url }}>
-            <a>Home</a>
+            Home
           </Link>...
         </div>
       </Redirect>

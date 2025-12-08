@@ -34,7 +34,7 @@ function TabButton(props) {
         return (
             <Link href={{ pathname: pathname, query: { tab: tab_number } }}>
                 <div selected={is_selected}style={style}>
-                    <a className="pointernormal" style={{fontWeight: is_selected ? "bold" : null, color: "inherit"}}>{name}</a>
+                    <span className="pointernormal" style={{fontWeight: is_selected ? "bold" : null, color: "inherit"}}>{name}</span>
                 </div>
             </Link>
         );
