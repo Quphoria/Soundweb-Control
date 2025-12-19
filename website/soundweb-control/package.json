@@ -15,7 +15,7 @@
     "bootstrap-icons": "^1.11.3",
     "comment-json": "^4.2.3",
     "iron-session": "^8.0.4",
-    "next": "^16.0.7",
+    "next": "^16.1.0",
     "nextjs-redirect": "^6.0.0",
     "number-formatter": "^1.2.0",
     "react": "^18.1.0",
